@@ -1,26 +1,46 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --primary: #356149;
+    --primary-hover: #294c39;
+    --primary-light: #edf5f0;
+    --accent: #d97706;
+    --bg-warm: #faf8f5;
+    --card-bg: #ffffff;
+    --border-color: #e5e3dc;
+    --text-primary: #1f2937;
+    --text-muted: #6b7280;
+  }
+
+  body {
+    background-color: var(--bg-warm);
+    color: var(--text-primary);
+    font-family: var(--font-body), sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading), sans-serif;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Custom Utilities for Alma Canina */
+.bg-brand-primary {
+  background-color: #356149;
+}
+
+.text-brand-primary {
+  color: #356149;
+}
+
+.border-brand-primary {
+  border-color: #356149;
+}
+
+.bg-brand-light {
+  background-color: #edf5f0;
+}
+
+.bg-brand-warm {
+  background-color: #faf8f5;
 }
