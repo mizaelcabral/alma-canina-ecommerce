@@ -45,9 +45,6 @@ export default function Header() {
 
           {/* Desktop Links */}
           <nav className="hidden md:flex items-center gap-8 text-stone-700 font-medium text-sm">
-            <Link href="/#cardapios" className="hover:text-[#356149] transition-colors">
-              Nossos Cardápios
-            </Link>
             <Link href="/quiz" className="hover:text-[#356149] transition-colors flex items-center gap-1 text-[#356149] font-semibold">
               <Sparkles className="w-4 h-4 text-amber-500" />
               Calculadora do Pet
@@ -106,13 +103,6 @@ export default function Header() {
       {/* Mobile Menu Dropdown */}
       {mobileMenuOpen && (
         <div className="md:hidden border-t border-stone-200 bg-white px-4 pt-3 pb-6 space-y-3">
-          <Link
-            href="/#cardapios"
-            onClick={() => setMobileMenuOpen(false)}
-            className="block py-2 text-base font-medium text-stone-700 hover:text-[#356149]"
-          >
-            Nossos Cardápios
-          </Link>
           <Link
             href="/quiz"
             onClick={() => setMobileMenuOpen(false)}
