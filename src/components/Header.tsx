@@ -43,16 +43,17 @@ export default function Header() {
             />
           </Link>
 
-          {/* Desktop Links */}
-          <nav className="hidden md:flex items-center gap-8 text-stone-700 font-medium text-sm">
-            <Link href="/quiz" className="hover:text-[#356149] transition-colors flex items-center gap-1 text-[#356149] font-semibold">
+          {/* Right Action Icons & Links */}
+          <div className="flex items-center gap-3 sm:gap-5">
+            {/* Calculadora do Pet */}
+            <Link
+              href="/quiz"
+              className="hidden md:inline-flex items-center gap-1.5 text-stone-700 hover:text-[#356149] text-sm font-semibold transition-colors py-2 px-3 rounded-lg hover:bg-stone-50"
+            >
               <Sparkles className="w-4 h-4 text-amber-500" />
-              Calculadora do Pet
+              <span>Calculadora do Pet</span>
             </Link>
-          </nav>
 
-          {/* Right Action Icons */}
-          <div className="flex items-center gap-3 sm:gap-4">
             {/* Minha Conta & Rastreio */}
             <Link
               href="/minha-conta"
