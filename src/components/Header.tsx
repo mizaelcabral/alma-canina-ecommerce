@@ -49,9 +49,6 @@ export default function Header() {
               <Sparkles className="w-4 h-4 text-amber-500" />
               Calculadora do Pet
             </Link>
-            <Link href="/minha-conta" className="hover:text-[#356149] transition-colors">
-              Minha Conta & Rastreio
-            </Link>
           </nav>
 
           {/* Right Action Icons */}
