@@ -474,9 +474,9 @@ export default function WeasyStyleBuyBox() {
               {isAdding ? (
                 'Configurando seu pedido...'
               ) : purchaseType === 'subscription' ? (
-                `Assinar com 15% OFF • R$ ${totalPrice.toFixed(2).replace('.', ',')}/mês`
+                'Assinar com 15% OFF'
               ) : (
-                `Comprar Agora • R$ ${totalPrice.toFixed(2).replace('.', ',')}`
+                'Comprar Agora'
               )}
               <ArrowRight className="w-5 h-5" />
             </button>
