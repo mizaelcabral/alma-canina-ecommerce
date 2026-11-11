@@ -45,15 +45,6 @@ export default function Header() {
 
           {/* Right Action Icons & Links */}
           <div className="flex items-center gap-3 sm:gap-5">
-            {/* Calculadora do Pet */}
-            <Link
-              href="/quiz"
-              className="hidden md:inline-flex items-center gap-1.5 text-stone-700 hover:text-[#356149] text-sm font-semibold transition-colors py-2 px-3 rounded-lg hover:bg-stone-50"
-            >
-              <Sparkles className="w-4 h-4 text-amber-500" />
-              <span>Calculadora do Pet</span>
-            </Link>
-
             {/* Minha Conta & Rastreio */}
             <Link
               href="/minha-conta"
